@@ -88,7 +88,7 @@ function processFile() {
 
     var transformedText = `CPF${separador}Nome${separador}Agencia${separador}Conta${separador}Valor${separador}Observacao${separador}\r\n`
     const lines = fileContents.split('\n');
-    for(i = 2; i<(lines.length - 3); i = i + 2)
+    for(let i = 2; i<(lines.length - 3); i = i + 2)
     {
         transformedText = transformedText + processa(lines[i], lines[i+1],separador) + "\r\n";
         
