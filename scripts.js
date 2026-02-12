@@ -86,7 +86,7 @@ function processFile() {
     
     const separador = ";";
 
-    var transformedText = `CPF${separador}Nome${separador}Agencia${separador}Conta${separador}Valor\r\n`
+    var transformedText = `CPF${separador}Nome${separador}Agencia${separador}Conta${separador}Valor${separador}Observacao\r\n`
     const lines = fileContents.split('\n');
     for(let i = 2; i<(lines.length - 3); i = i + 2)
     {
