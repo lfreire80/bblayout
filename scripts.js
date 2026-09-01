@@ -112,7 +112,7 @@ function processFile() {
       seg.nome + separador +
       seg.agencia + separador + 
       seg.conta + separador + 
-      seg.valor;
+      seg.valor + separador;
     
     return retorno;
 
